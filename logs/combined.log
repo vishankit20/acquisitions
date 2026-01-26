@@ -1,0 +1,203 @@
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User registered successfully: vishankit20@gmail.com","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User abs@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:20:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User kishanvish203@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:20:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: ankitmin,kishanvish203@gmail.com,$2b$10$PVZ/5zWi4Egzu0mFkof9A.UsgGf2M0QgChlxT0PYyMbzdmdgES27u,admin","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User admin@jsmastery.pro created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:20:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: Admin,admin@jsmastery.pro,$2b$10$DUEgf96kqpOn.5LorqsFkel2qE1XQgAGIwttbv3tGznfNdmgD6prC,admin","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User vishankit20@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:20:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: ankit,vishankit20@gmail.com,$2b$10$BGGP0VUI92nUg1c.dqHn3uU4HWU/AFuinRHOQPuRH3HNVg1PPo7WC,user","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: ankit,vishankit20@gmail.com,$2b$10$pUnQRgMmyGBGS1HeZTIcfOtCXiWntSOJ6otpB4yQY2ojRJsUNo7Oa,user","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: ankit,vishankit20@gmail.com,$2b$10$0QReDYJhRyXhish3p4iT0up8vE4L8jPe2mUHRA.8BhaPFwwxUrlBK,user","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: Admin,admin@jsmastery.pro,$2b$10$960XVoh0nnb.WjG3.b/WV.45fs6I78Gs0sSkWgs/dCikjYIafZepC,admin","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: User already exists","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: User already exists","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User visnkit20@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:20:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: User already exists","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: User already exists","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User vishankit20@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:21:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: User already exists","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User vishankit20@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:21:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: User already exists","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User vishankit20@gmail.com created successfully","service":"acquisition-api"}
+{"level":"error","message":"failed to authenticate token \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60","service":"acquisition-api","stack":"Error: \"expiresIn\" should be a number of seconds or string representing a timespan eg: \"1d\", \"20h\", 60\n    at module.exports [as sign] (/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/jsonwebtoken/sign.js:213:22)\n    at Object.sign (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/utils/jwt.js:11:18)\n    at signup (file:///Users/ankitvishwakarma/Parul/acquisitions/acquisitions/src/controllers/auth.controller.js:21:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User vishankit20@gmail.com created successfully","service":"acquisition-api"}
+{"level":"info","message":"User registered successfully: vishankit20@gmail.com","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User admin@jsmastery.pro created successfully","service":"acquisition-api"}
+{"level":"info","message":"User registered successfully: admin@jsmastery.pro","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User adrian@jsmastery.pro created successfully","service":"acquisition-api"}
+{"level":"info","message":"User registered successfully: adrian@jsmastery.pro","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User logged in successfully: adrian@jsmastery.pro","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
