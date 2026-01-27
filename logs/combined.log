@@ -459,3 +459,15 @@
 {"level":"info","message":"combined","service":"acquisition-api"}
 {"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisition-api","userAgent":"HTTPie"}
 {"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error creating the user: Error: Failed query: select \"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2\nparams: contact@jsmastery.com,1","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User contact@jsmastery.com created successfully","service":"acquisition-api"}
+{"level":"info","message":"User registered successfully: contact@jsmastery.com","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}

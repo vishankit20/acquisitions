@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a94019fb-dfa3-4213-9c5f-d02ae1fa46c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/prod.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/combined.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.lg" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.lg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/logs/combined.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/logs/error.lg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/database.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/ankitvishwakarma/Parul/acquisitions/acquisitions/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "/Users/ankitvishwakarma/Parul/acquisitions/node_modules/prettier",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -61,6 +59,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -86,7 +87,7 @@
       <workItem from="1769364020395" duration="8871000" />
       <workItem from="1769413872457" duration="2650000" />
       <workItem from="1769451413505" duration="6370000" />
-      <workItem from="1769541185433" duration="469000" />
+      <workItem from="1769541185433" duration="8792000" />
     </task>
     <servers />
   </component>
