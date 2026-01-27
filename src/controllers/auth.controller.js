@@ -79,7 +79,7 @@ export const signin = async (req, res, next) => {
       },
     });
   } catch (e) {
-    console.error('Signin error', e);
+    console.error('Sign in error', e);
     if (e.message === 'User not found' || e.message === 'Invalid credentials') {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
