@@ -471,3 +471,67 @@
 {"level":"info","message":"User contact@jsmastery.com created successfully","service":"acquisition-api"}
 {"level":"info","message":"User registered successfully: contact@jsmastery.com","service":"acquisition-api"}
 {"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting users...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting users...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 4...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 2...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 4...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 5...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 6...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisition-api","userAgent":"HTTPie"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/users/4","service":"acquisition-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/api/users/5","service":"acquisition-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/","service":"acquisition-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting users...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 4...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 5...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error authenticating the user: Error: User not found","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error authenticating the user: Error: User not found","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"error","message":"Error authenticating the user: Error: User not found","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User demora@gmail.com created successfully","service":"acquisition-api"}
+{"level":"info","message":"User registered successfully: demora@gmail.com","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"User logged in successfully: demora@gmail.com","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"Getting user with id 7...","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}

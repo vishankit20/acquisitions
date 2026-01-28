@@ -6,7 +6,9 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from './routes/auth.routes.js';
+import authMiddleware from '#middleware/auth.middleware.js';
 import securityMiddleware from '#middleware/security.middleware.js';
+import usersRoutes from '#routes/users.routes.js';
 
 const app = express();
 app.use(helmet());
@@ -21,6 +23,8 @@ app.use(
   })
 );
 
+// Attach authenticated user (if any) before security middleware so rate limits can be role-aware
+app.use(authMiddleware);
 app.use(securityMiddleware);
 
 app.get('/', (req, res) => {
@@ -46,5 +50,6 @@ app.get('/api', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/users', usersRoutes);
 
 export default app;
