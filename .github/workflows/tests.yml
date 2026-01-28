@@ -1,0 +1,98 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        id: tests
+        env:
+          NODE_ENV: test
+          NODE_OPTIONS: --experimental-vm-modules
+          DATABASE_URL: postgresql://test:test@localhost:5432/testdb
+        run: |
+          npm test 2>&1 | tee test-output.txt
+          echo "test_exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
+
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-reports
+          path: coverage/
+          retention-days: 30
+
+      - name: Generate test summary
+        if: always()
+        run: |
+          echo "# Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f coverage/lcov-report/index.html ]; then
+            # Extract coverage percentage if available
+            COVERAGE=$(grep -oP 'Functions.*?(\d+\.?\d*)%' coverage/lcov-report/index.html | head -1 | grep -oP '\d+\.?\d*' || echo "N/A")
+            echo "## Coverage Report" >> $GITHUB_STEP_SUMMARY
+            echo "- **Overall Coverage**: ${COVERAGE}%" >> $GITHUB_STEP_SUMMARY
+            echo "- **Coverage reports uploaded as artifacts**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -f test-output.txt ]; then
+            echo "## Test Output" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            tail -n 20 test-output.txt >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ steps.tests.outputs.test_exit_code }}" -eq "0" ]; then
+            echo "✅ **All tests passed successfully!**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Some tests failed. Check the logs above for details.**" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Annotate test failures
+        if: failure() && steps.tests.outcome == 'failure'
+        run: |
+          if [ -f test-output.txt ]; then
+            while IFS= read -r line; do
+              # Match Jest error patterns
+              if [[ $line =~ ●[[:space:]](.*)$ ]]; then
+                echo "::error::Test failure: ${BASH_REMATCH[1]}"
+              elif [[ $line =~ [[:space:]]+at[[:space:]].*\(([^:]+):([0-9]+):([0-9]+)\) ]]; then
+                file="${BASH_REMATCH[1]}"
+                line_num="${BASH_REMATCH[2]}"
+                col_num="${BASH_REMATCH[3]}"
+                echo "::error file=${file},line=${line_num},col=${col_num}::Test failure location"
+              elif [[ $line =~ ^[[:space:]]*Expected.*$ ]]; then
+                echo "::error::${line}"
+              elif [[ $line =~ ^[[:space:]]*Received.*$ ]]; then
+                echo "::error::${line}"
+              fi
+            done < test-output.txt
+          fi
+          echo "::notice::Run tests locally with: npm test"
+
+      - name: Fail workflow if tests failed
+        if: steps.tests.outputs.test_exit_code != '0'
+        run: |
+          echo "Tests failed with exit code ${{ steps.tests.outputs.test_exit_code }}"
+          exit 1

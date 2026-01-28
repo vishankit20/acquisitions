@@ -1,0 +1,74 @@
+name: Lint and Format
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        id: eslint
+        run: |
+          npm run lint 2>&1 | tee eslint-output.txt
+          if [ ${PIPESTATUS[0]} -ne 0 ]; then
+            echo "::error::ESLint found issues. Run 'npm run lint:fix' to auto-fix where possible."
+            exit 1
+          fi
+
+      - name: Run Prettier check
+        id: prettier
+        run: |
+          npm run format:check 2>&1 | tee prettier-output.txt
+          if [ ${PIPESTATUS[0]} -ne 0 ]; then
+            echo "::error::Prettier found formatting issues. Run 'npm run format' to fix formatting."
+            exit 1
+          fi
+
+      - name: Annotate ESLint results
+        if: failure() && steps.eslint.outcome == 'failure'
+        run: |
+          if [ -f eslint-output.txt ]; then
+            while IFS= read -r line; do
+              if [[ $line =~ ([^:]+):([0-9]+):([0-9]+): ]]; then
+                file="${BASH_REMATCH[1]}"
+                line_num="${BASH_REMATCH[2]}"
+                col_num="${BASH_REMATCH[3]}"
+                message="${line#*: }"
+                echo "::error file=${file},line=${line_num},col=${col_num}::${message}"
+              fi
+            done < eslint-output.txt
+          fi
+          echo "::notice::Fix ESLint issues with: npm run lint:fix"
+
+      - name: Annotate Prettier results
+        if: failure() && steps.prettier.outcome == 'failure'
+        run: |
+          if [ -f prettier-output.txt ]; then
+            while IFS= read -r line; do
+              if [[ $line =~ ^Code\ style\ issues\ found\ in\ the\ above\ file\(s\) ]]; then
+                echo "::error::Prettier formatting issues detected"
+              elif [[ $line =~ ^Checking\ formatting ]]; then
+                continue
+              elif [[ $line != "" ]]; then
+                echo "::error::${line}"
+              fi
+            done < prettier-output.txt
+          fi
+          echo "::notice::Fix formatting issues with: npm run format"

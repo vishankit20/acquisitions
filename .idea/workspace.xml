@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a94019fb-dfa3-4213-9c5f-d02ae1fa46c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/users.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/users.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/users.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/combined.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
