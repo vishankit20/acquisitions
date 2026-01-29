@@ -46,7 +46,7 @@ jobs:
         run: |
           echo "# Test Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          
+
           if [ -f coverage/lcov-report/index.html ]; then
             # Extract coverage percentage if available
             COVERAGE=$(grep -oP 'Functions.*?(\d+\.?\d*)%' coverage/lcov-report/index.html | head -1 | grep -oP '\d+\.?\d*' || echo "N/A")
@@ -55,14 +55,14 @@ jobs:
             echo "- **Coverage reports uploaded as artifacts**" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           if [ -f test-output.txt ]; then
             echo "## Test Output" >> $GITHUB_STEP_SUMMARY
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
             tail -n 20 test-output.txt >> $GITHUB_STEP_SUMMARY
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           if [ "${{ steps.tests.outputs.test_exit_code }}" -eq "0" ]; then
             echo "✅ **All tests passed successfully!**" >> $GITHUB_STEP_SUMMARY
           else

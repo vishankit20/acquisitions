@@ -538,3 +538,66 @@
 {"level":"info","message":"combined","service":"acquisition-api"}
 {"level":"info","message":"combined","service":"acquisition-api"}
 {"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"hello from acquisitions","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/health","role":"guest","service":"acquisition-api","userAgent":"HTTPie"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/health","role":"guest","service":"acquisition-api","userAgent":"HTTPie"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/health","role":"guest","service":"acquisition-api","userAgent":"HTTPie"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/health","role":"guest","service":"acquisition-api","userAgent":"HTTPie"}
+{"level":"info","message":"combined","service":"acquisition-api"}
+{"ip":"::ffff:192.168.65.1","level":"warn","message":"Rate limit exceeded","path":"/health","role":"guest","service":"acquisition-api","userAgent":"HTTPie"}
+{"level":"info","message":"combined","service":"acquisition-api"}

@@ -46,10 +46,11 @@ A secure authentication API built with Node.js, Express, and Neon Database, feat
    - Note your database URL for production
 
 2. **Configure Environment Variables:**
+
    ```bash
    # Copy and modify development environment
    cp .env.development .env
-   
+
    # Update with your actual Neon credentials
    nano .env
    ```
@@ -59,6 +60,7 @@ A secure authentication API built with Node.js, Express, and Neon Database, feat
 ### What is Neon Local?
 
 Neon Local creates a local proxy to your Neon cloud database, enabling:
+
 - **Ephemeral branches**: Fresh database copy for each development session
 - **Automatic cleanup**: Database branch deleted when container stops
 - **Seamless switching**: Same connection string works across environments
@@ -66,6 +68,7 @@ Neon Local creates a local proxy to your Neon cloud database, enabling:
 ### Development Setup
 
 1. **Configure Development Environment:**
+
    ```bash
    # Update .env.development with your Neon credentials
    NEON_API_KEY=your_neon_api_key_here
@@ -74,10 +77,11 @@ Neon Local creates a local proxy to your Neon cloud database, enabling:
    ```
 
 2. **Start Development Environment:**
+
    ```bash
    # Using npm scripts
    npm run docker:dev
-   
+
    # Or directly with docker-compose
    docker-compose -f docker-compose.dev.yml up --build
    ```
@@ -94,6 +98,7 @@ Neon Local creates a local proxy to your Neon cloud database, enabling:
    - **Database**: `postgres://neon:npg@localhost:5432/neondb`
 
 5. **View Logs:**
+
    ```bash
    npm run docker:logs:dev
    ```
@@ -128,6 +133,7 @@ npm run docker:down:dev
 ### Production Setup
 
 1. **Configure Production Environment:**
+
    ```bash
    # Set these in your deployment platform (Heroku, AWS, etc.)
    export NODE_ENV=production
@@ -137,10 +143,11 @@ npm run docker:down:dev
    ```
 
 2. **Deploy with Docker:**
+
    ```bash
    # Build and run production container
    npm run docker:prod
-   
+
    # Or with environment variables
    DATABASE_URL="your-neon-url" JWT_SECRET="secret" npm run docker:prod
    ```
@@ -180,23 +187,24 @@ curl http://localhost:3000/health
 
 ### Authentication
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/sign-up` | Register new user |
-| POST | `/api/auth/sign-in` | Login user |
-| POST | `/api/auth/sign-out` | Logout user |
+| Method | Endpoint             | Description       |
+| ------ | -------------------- | ----------------- |
+| POST   | `/api/auth/sign-up`  | Register new user |
+| POST   | `/api/auth/sign-in`  | Login user        |
+| POST   | `/api/auth/sign-out` | Logout user       |
 
 ### System
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/` | Basic status |
-| GET | `/health` | Health check |
-| GET | `/api` | API status |
+| Method | Endpoint  | Description  |
+| ------ | --------- | ------------ |
+| GET    | `/`       | Basic status |
+| GET    | `/health` | Health check |
+| GET    | `/api`    | API status   |
 
 ### Example Requests
 
 **Sign Up:**
+
 ```bash
 curl -X POST http://localhost:3000/api/auth/sign-up \\
   -H "Content-Type: application/json" \\
@@ -209,6 +217,7 @@ curl -X POST http://localhost:3000/api/auth/sign-up \\
 ```
 
 **Sign In:**
+
 ```bash
 curl -X POST http://localhost:3000/api/auth/sign-in \\
   -H "Content-Type: application/json" \\
@@ -308,27 +317,30 @@ docker-compose -f docker-compose.dev.yml up --build
 ## Environment Variables Reference
 
 ### Development (.env.development)
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `NODE_ENV` | Environment | `development` |
-| `DATABASE_URL` | Database connection | `postgres://neon:npg@neon-local:5432/neondb` |
-| `NEON_API_KEY` | Neon API key | `your_neon_api_key` |
-| `NEON_PROJECT_ID` | Neon project ID | `your_project_id` |
-| `PARENT_BRANCH_ID` | Source branch | `main` |
+
+| Variable           | Description         | Example                                      |
+| ------------------ | ------------------- | -------------------------------------------- |
+| `NODE_ENV`         | Environment         | `development`                                |
+| `DATABASE_URL`     | Database connection | `postgres://neon:npg@neon-local:5432/neondb` |
+| `NEON_API_KEY`     | Neon API key        | `your_neon_api_key`                          |
+| `NEON_PROJECT_ID`  | Neon project ID     | `your_project_id`                            |
+| `PARENT_BRANCH_ID` | Source branch       | `main`                                       |
 
 ### Production (.env.production)
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `NODE_ENV` | Environment | `production` |
-| `DATABASE_URL` | Neon cloud URL | `postgresql://user:pass@host.neon.tech/db` |
-| `JWT_SECRET` | JWT signing key | `your-secret-key` |
-| `ARCJET_KEY` | Arcjet API key | `ajkey_...` |
+
+| Variable       | Description     | Example                                    |
+| -------------- | --------------- | ------------------------------------------ |
+| `NODE_ENV`     | Environment     | `production`                               |
+| `DATABASE_URL` | Neon cloud URL  | `postgresql://user:pass@host.neon.tech/db` |
+| `JWT_SECRET`   | JWT signing key | `your-secret-key`                          |
+| `ARCJET_KEY`   | Arcjet API key  | `ajkey_...`                                |
 
 ## Troubleshooting
 
 ### Common Issues
 
 **1. Neon Local Connection Failed**
+
 ```bash
 # Check if Neon Local container is running
 docker ps | grep neon_local
@@ -338,6 +350,7 @@ docker-compose -f docker-compose.dev.yml logs neon-local
 ```
 
 **2. Database Migration Issues**
+
 ```bash
 # Reset and regenerate schema
 npm run db:generate
@@ -345,6 +358,7 @@ docker-compose -f docker-compose.dev.yml exec app npm run db:migrate
 ```
 
 **3. Permission Denied in Production**
+
 ```bash
 # Check if logs directory exists and has correct permissions
 mkdir -p logs

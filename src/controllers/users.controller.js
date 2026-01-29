@@ -6,7 +6,10 @@ import {
   deleteUser as deleteUserService,
 } from '#services/users.service.js';
 import { formatValidationError } from '#utils/format.js';
-import { userIdSchema, updateUserSchema } from '#validations/users.validation.js';
+import {
+  userIdSchema,
+  updateUserSchema,
+} from '#validations/users.validation.js';
 
 export const fetchAllUsers = async (req, res, next) => {
   try {
@@ -89,16 +92,20 @@ export const updateUser = async (req, res, next) => {
 
     if (!isSelf && !isAdmin) {
       logger.warn(
-        `User ${authenticatedUserId} attempted to update user ${id} without permission`,
+        `User ${authenticatedUserId} attempted to update user ${id} without permission`
       );
-      return res.status(403).json({ error: 'Not authorized to update this user' });
+      return res
+        .status(403)
+        .json({ error: 'Not authorized to update this user' });
     }
 
     if (updates.role && !isAdmin) {
       logger.warn(
-        `User ${authenticatedUserId} attempted to change role for user ${id} without admin rights`,
+        `User ${authenticatedUserId} attempted to change role for user ${id} without admin rights`
       );
-      return res.status(403).json({ error: 'Only admin users can change roles' });
+      return res
+        .status(403)
+        .json({ error: 'Only admin users can change roles' });
     }
 
     logger.info(`Updating user with id ${id}...`);
@@ -143,9 +150,11 @@ export const deleteUser = async (req, res, next) => {
 
     if (!isSelf && !isAdmin) {
       logger.warn(
-        `User ${authenticatedUserId} attempted to delete user ${id} without permission`,
+        `User ${authenticatedUserId} attempted to delete user ${id} without permission`
       );
-      return res.status(403).json({ error: 'Not authorized to delete this user' });
+      return res
+        .status(403)
+        .json({ error: 'Not authorized to delete this user' });
     }
 
     logger.info(`Deleting user with id ${id}...`);

@@ -23,7 +23,9 @@ const attachUserFromToken = (req, res, next) => {
 
     return next();
   } catch (e) {
-    logger.warn('Failed to verify JWT token in auth middleware', { error: e.message });
+    logger.warn('Failed to verify JWT token in auth middleware', {
+      error: e.message,
+    });
     // Invalid token -> treat as unauthenticated/guest; do not block outright here
     req.user = undefined;
     return next();
@@ -47,7 +49,9 @@ export const requireRoles = (...allowedRoles) => {
     }
 
     if (!allowedRoles.includes(req.user.role)) {
-      return res.status(403).json({ error: 'Forbidden: insufficient permissions' });
+      return res
+        .status(403)
+        .json({ error: 'Forbidden: insufficient permissions' });
     }
 
     return next();

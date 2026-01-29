@@ -5,6 +5,7 @@ This directory contains the CI/CD workflows for the Acquisitions API project.
 ## Workflows
 
 ### 1. `lint-and-format.yml` - Code Quality Checks
+
 - **Triggers**: Push and PR to `main` and `staging` branches
 - **Purpose**: Ensures code quality and consistency
 - **Features**:
@@ -14,7 +15,8 @@ This directory contains the CI/CD workflows for the Acquisitions API project.
   - Fails workflow if issues are found
 
 ### 2. `tests.yml` - Test Execution
-- **Triggers**: Push and PR to `main` and `staging` branches  
+
+- **Triggers**: Push and PR to `main` and `staging` branches
 - **Purpose**: Runs the test suite and generates coverage reports
 - **Features**:
   - Runs Jest tests with proper Node.js ESM configuration
@@ -24,6 +26,7 @@ This directory contains the CI/CD workflows for the Acquisitions API project.
   - Provides detailed error annotations for test failures
 
 ### 3. `docker-build-and-push.yml` - Container Build & Deploy
+
 - **Triggers**: Push to `main` branch or manual dispatch
 - **Purpose**: Builds and pushes Docker images to Docker Hub
 - **Features**:
@@ -47,8 +50,9 @@ For the Docker workflow to work properly, you need to set these repository secre
 ## Workflow Dependencies
 
 The workflows are designed to:
+
 1. **lint-and-format.yml** - Run first to catch basic code issues
-2. **tests.yml** - Run in parallel or after linting to verify functionality  
+2. **tests.yml** - Run in parallel or after linting to verify functionality
 3. **docker-build-and-push.yml** - Run only on main branch after tests pass
 
 ## Local Development Commands

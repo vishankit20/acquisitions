@@ -106,7 +106,6 @@ There are two shell scripts in `scripts/` that wrap Docker Compose setups. They 
   ```
 
   This script (`scripts/dev.sh`) will:
-
   - Verify `.env.development` exists (used by both the app and the `neon-local` service).
   - Verify Docker is running.
   - Ensure a `.neon_local/` directory exists and is ignored by Git.
@@ -115,7 +114,6 @@ There are two shell scripts in `scripts/` that wrap Docker Compose setups. They 
   - Start `docker compose -f docker-compose.dev.yml up --build`.
 
 - The development Docker Compose file is `docker-compose.dev.yml`:
-
   - Service `neon-local`: Neon Local proxy exposing PostgreSQL on `localhost:5432`.
   - Service `app`: builds from the `Dockerfile` `development` stage, exposes port `3000`, mounts `./src` and `./logs`, and participates in the `acquisitions-network` bridge network.
 
@@ -156,14 +154,12 @@ The `README.md` also documents equivalent direct Docker Compose commands, e.g.:
   ```
 
   This script (`scripts/prod.sh`) will:
-
   - Verify `.env.production` exists.
   - Verify Docker is running.
   - Run `docker compose -f docker-compose.prod.yml up --build -d` to start the stack in detached mode.
   - Run `npm run db:migrate` to apply the latest schema against the production `DATABASE_URL`.
 
 - The production Compose file is `docker-compose.prod.yml`:
-
   - Service `app`: builds from the `Dockerfile` `production` stage, container name `acquisitions-app-prod`, exposes `3000`, mounts `./logs`, has a healthcheck hitting `/health`, and resource limits configured under `deploy.resources`.
   - Service `nginx`: optional reverse proxy/load balancer on ports `80` and `443`, using `nginx.conf` and SSL certificate files mounted from `./ssl`.
 

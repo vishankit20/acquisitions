@@ -14,15 +14,18 @@ const securityMiddleware = async (req, res, next) => {
         limit = 20;
         message = 'Admin request limit exceeded (20 per minute). Slow down.';
         break;
+
       case 'user':
         limit = 10;
         message = 'User request limit exceeded (10 per minute). Slow down.';
         break;
+
       case 'guest':
         limit = 5;
         message = 'Guest request limit exceeded (5 per minute). Slow down.';
         break;
     }
+
     const client = aj.withRule(
       slidingWindow({
         mode: 'LIVE',
@@ -40,12 +43,10 @@ const securityMiddleware = async (req, res, next) => {
         userAgent: req.get('User-Agent'),
         path: req.path,
       });
-      return res
-        .status(403)
-        .json({
-          error: 'Forbidden',
-          message: 'Automated requests are not allowed',
-        });
+      return res.status(403).json({
+        error: 'Forbidden',
+        message: 'Automated requests are not allowed',
+      });
     }
 
     if (decision.isDenied() && decision.reason.isShield()) {
@@ -55,12 +56,10 @@ const securityMiddleware = async (req, res, next) => {
         path: req.path,
         method: req.method,
       });
-      return res
-        .status(403)
-        .json({
-          error: 'Forbidden',
-          message: 'Request blocked by security policy',
-        });
+      return res.status(403).json({
+        error: 'Forbidden',
+        message: 'Request blocked by security policy',
+      });
     }
 
     if (decision.isDenied() && decision.reason.isRateLimit()) {
@@ -68,20 +67,17 @@ const securityMiddleware = async (req, res, next) => {
         ip: req.ip,
         userAgent: req.get('User-Agent'),
         path: req.path,
+        role: role,
       });
-      return res
-        .status(403)
-        .json({ error: 'Forbidden', message: 'Too many requests' });
+      return res.status(403).json({ error: 'Forbidden', message: message });
     }
     next();
   } catch (e) {
     console.error('Arcjet middleware error:', e);
-    res
-      .status(500)
-      .json({
-        error: 'Internal server error',
-        message: 'Something went wrong with security middleware',
-      });
+    res.status(500).json({
+      error: 'Internal server error',
+      message: 'Something went wrong with security middleware',
+    });
   }
 };
 export default securityMiddleware;
